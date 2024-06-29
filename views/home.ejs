@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title><%= title %></title>
+  </head>
+  <body>
+    <%- include('partials/header') %>
+    <main>
+      <h1>Home page</h1>
+      <section id="one">
+        <form action="/code" method="post">
+          <input
+            type="text"
+            name="plName"
+            id=""
+            size="35"
+            placeholder="Enter a name of programming language"
+          />
+          <button type="submit">Add data</button>
+        </form>
+
+        <ul>
+          <% if(plNames.length>0) { %> <% for(let i = 0; i < plNames.length;
+          i++) { %>
+          <li><%= plNames[i] %></li>
+          <% } %> <% } else { %>
+          <p>No data available</p>
+          <% } %>
+        </ul>
+      </section>
+      <section id="two">
+        <div class="item">
+          <% for(let i = 0; i < item.length; i++) { %>
+          <div class="cards">
+            <img src="" alt="Salgado" class="salgadosImg"/>
+            <div class="info">
+            <h2><%= item[i].name.toUpperCase() %></h2>
+            <p> <%= item[i].description %></p>
+            <a href="/inputs" class="addItem">Add</a>
+            </div>
+          </div>
+          <% } %>
+        </div>
+      </section>
+     
+    </main>
+    <%- include('partials/footer') %>
+  </body>
+</html>

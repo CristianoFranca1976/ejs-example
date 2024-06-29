@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-size: 2vh;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 700;
+  font-style: oblique;
+}
+body {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: bisque;
+  max-width: 1200px;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-around;
+  border: 2px groove black;
+  padding: 10px;
+}
+footer p {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-around;
+  color: brown;
+  border: 2px groove black;
+  padding: 10px;
+}
+select {
+  width: 120px;
+}
+input[type='text'] {
+  width: 36vh;
+}
+input::placeholder {
+  font-size: 1.5vh;
+}
+input[type='number'] {
+  width: 10vh;
+}
+#basket {
+  border: 2px groove black;
+}
+.cards {
+  border: 2px ridge black;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 343px;
+}
+.item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.salgadosImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-inputs {
+  border: 0px solid red;
+}
+
